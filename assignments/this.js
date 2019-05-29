@@ -17,6 +17,15 @@
 
 // code example for Implicit Binding
 
+const myObj = {
+    greeting: 'Hello',
+    sayHello: function(name) {
+      console.log(`${this.greeting} my name is ${name}`);
+      console.log(this);
+    }
+  };
+  myObj.sayHello('Jason');
+
 // Principle 3
 
 // code example for New Binding
